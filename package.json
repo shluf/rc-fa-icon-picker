@@ -1,6 +1,6 @@
 {
   "name": "rc-fa-icon-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "data/fontawesome-icons.json"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && npm run build:types",
     "build:types": "tsc --emitDeclarationOnly --project ."
   },
   "author": "shluf",
@@ -34,5 +34,17 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shluf/rc-fa-icon-picker.git"
+  },
+  "homepage": "https://github.com/shluf/rc-fa-icon-picker#readme",
+  "keywords": [
+    "react",
+    "font-awesome",
+    "icon-picker",
+    "icon-search",
+    "icon-color"
+  ]
 }
