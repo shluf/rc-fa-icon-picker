@@ -1,0 +1,38 @@
+{
+  "name": "rc-fa-icon-picker",
+  "version": "1.0.0",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "data/fontawesome-icons.json"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build:types": "tsc --emitDeclarationOnly --project ."
+  },
+  "author": "shluf",
+  "license": "MIT",
+  "description": "A customizable React component for picking Font Awesome icons with search and color selection.",
+  "peerDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-regular-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.5"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  }
+}
