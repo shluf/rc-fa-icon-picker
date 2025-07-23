@@ -200,6 +200,7 @@ export function IconPicker({
 
               <div className="flex gap-2">
                 <Button 
+                    type="button"
                     variant="outline" 
                     onClick={() => handleIconTypeSelect('all')} 
                     className='py-1 rounded-full text-sm' 
@@ -211,6 +212,7 @@ export function IconPicker({
                     }}
                 >All</Button>
                 <Button 
+                    type="button"
                     variant="outline" 
                     onClick={() => handleIconTypeSelect('fas')} 
                     className='py-1 rounded-full text-sm' 
@@ -221,6 +223,7 @@ export function IconPicker({
                     }}
                 >Solid</Button>
                 <Button 
+                    type="button"
                     variant="outline" 
                     onClick={() => handleIconTypeSelect('fab')} 
                     className='py-1 rounded-full text-sm' 
@@ -231,6 +234,7 @@ export function IconPicker({
                     }}
                 >Brands</Button>
                 <Button 
+                    type="button"
                     variant="outline" 
                     onClick={() => handleIconTypeSelect('far')} 
                     className='py-1 rounded-full text-sm' 
@@ -259,6 +263,7 @@ export function IconPicker({
 
                     return (
                       <button
+                        type="button"
                         key={`${icon.name}-${icon.type}`}
                         onClick={() => handleIconSelect(icon)}
                         className={cn(
@@ -334,6 +339,7 @@ export function IconPicker({
 
           <ModalFooter style={{ borderTop: `1px solid ${colorScheme.border}` }}>
             <Button
+              type="button"
               variant="outline"
               onClick={() => setOpen(false)}
               className={`hover:bg-[${colorScheme.hover}]`}
@@ -346,6 +352,7 @@ export function IconPicker({
               {cancelText}
             </Button>
             <Button
+              type="button"
               onClick={handleSave}
               disabled={!selectedIcon}
               className={`text-white hover:opacity-90 disabled:opacity-50`}

@@ -26,6 +26,7 @@ export function ColorPaletteSelector({
           {palette.colors.map((color, index) => (
             <button
               key={index}
+              type="button"
               onClick={() => onColorSelect(color)}
               className={cn(
                 'w-8 h-8 rounded-md border-2 transition-all hover:scale-110 cursor-pointer',
