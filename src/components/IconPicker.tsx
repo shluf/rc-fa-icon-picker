@@ -140,6 +140,7 @@ export function IconPicker({
     if (trigger) return trigger;
     return (
       <Button
+        type="button"
         onClick={() => setOpen(true)}
         className={triggerClassName}
         variant="outline"

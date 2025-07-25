@@ -34,7 +34,7 @@ export const THEME_DARK: ColorScheme = {
   border: '#262626',
   hover: '#262626',
   active: '#262626',
-  disabled: '#737373',
+  disabled: '#262626',
   focus: '#D4D4D4',
   selected: '#262626',
   error: '#b91c1c',
